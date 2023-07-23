@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+}
+div{
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#cont{
+    width: 600px;
+    height: 600px;
+    display: flex; 
+    /* changes and flex box on  */
+    flex-direction: row;
+    /* main axis is coloumn     */
+    /* flex-direction: column-reverse; */
+    /* now its opp  */
+    /* special property thety have to be in size and compress unitl content is there  */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    /* align-content: center; */
+}   
+#box1{
+    background-color: aqua;
+    flex-shrink: 1 ;
+}
+#box2{
+    background-color: yellow;
+    height: 200px;
+    /* align-self: flex-end;  */
+}
+#box3{
+    background-color: red;
+    height: 275px;
+}
+#box4{
+    background-color: pink;
+}
+#box5{
+    background-color: yellowgreen;
+    /* align-self: flex-end;  */
+    /* more prio  */
+}
