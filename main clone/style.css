@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    /* faltu space ni hota h sara element ke andar hota h jo pehel bhar tha  */
+}
+.navbar{
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+}
