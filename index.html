@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css file jo cloud me h we will use that  -->
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
+    <div class="animate">
+        <div class="loading" id="loading">
+            <img src="https://cdn.dribbble.com/users/1980856/screenshots/4760116/comp_3.gif" alt="kk">
+        </div>
+        <div class="zoom" id="zoom">
+            <img src="logozoom.png" alt="kk">
+           
+        </div>
+    </div>
+    
+    <div class="mainpage" id="mainpage">
         <div class="navbar">
             <div class="nav-logo border">
                 <div class="logo"></div>
@@ -210,5 +221,28 @@
             <div class="copyright">© 1996-2023, Flipkart.com, Inc. or its affiliates</div>
         </div>
     </footer>
+</div>
+<script>
+    function Visibility() {
+        var myDv = document.getElementById('zoom');
+        var cont = document.getElementById('mainpage');
+        myDv.style.display='none';
+        cont.style.display='block';
+    }
+    // Function to toggle the visibility of the div
+    function toggleVisibility() {
+        var myDiv = document.getElementById('loading');
+        var maincont = document.getElementById('zoom');
+        myDiv.style.display='none';
+        maincont.style.display='flex';
+        setTimeout(Visibility, 2000);
+    }
+    
+  
+    // Call this function whenever you want to toggle the visibility
+    // For example, you can call it on a button click, timer, or any other event
+      setTimeout(toggleVisibility, 2200); // Toggle after 2 seconds (adjust the time as needed)
+    
+  </script>
 </body>
 </html>

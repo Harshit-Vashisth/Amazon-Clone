@@ -1,9 +1,40 @@
 *{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    border: border-box;
+    border: border-box
     /* faltu space ni hota h sara element ke andar hota h jo pehel bhar tha  */
 }
+.loading{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+#mainpage{
+    display: none;
+}
+.animate{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#zoom{
+    display: none;
+}
+.zoom{
+    margin-top: 200px;
+    animation: blurZoom 2s ease-out ;
+}
+@keyframes blurZoom {
+      0% {
+        filter: blur(0); /* No blur at the beginning */
+        transform: scale(1); /* Initial scale (no zoom) */
+      }
+      100% {
+        filter: blur(5px); /* Blur to be applied at the end */
+        transform: scale(10); /* Zoom in to 120% */
+      }
+    }
 .navbar{
     height: 60px;
     background-color: #020335;
@@ -183,11 +214,10 @@ display: flex;
     padding:20px 0px 15px;
     margin-top: 15px;
     border-radius: 6px;
-    animation: colorani 1s infinite alternate ;
+    animation: colorani 1.2s infinite alternate ;
    
 }
 .box:hover{
-    
     border: 2.5px solid #2874f0;
     transition-property: all;
     transition-duration: 0.5s; 
@@ -202,7 +232,7 @@ display: flex;
         transform: translateY(0);
     }
     to{
-        transform: translateY(-5px);
+        transform: translateY(-10px);
     }
 }
 .box-img{
